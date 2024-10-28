@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0a039;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 200px;
+    background: linear-gradient(135deg, #2c3e50, #2980b9);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.back {
+    background: #1a4a73;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.chip {
+    width: 50px;
+    height: 35px;
+    background: #fdcf03;
+    border-radius: 5px;
+    margin-bottom:25px ;
+}
+.chipb{
+    width: 50px;
+    height: 35px;
+    background: #adada9;
+    border-radius: 5px;
+    margin-left: 70%;
+    padding-right:20px ;
+    margin-top:5px ;
+}
+
+
+.bank-name, .card-number, .cardholder-name, .expiry {
+    margin: 5px 0;
+}
+
+.card-number {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+.black-strip {
+    width: 100%;
+    height: 30px;
+    background: black;
+    margin-top: 20px;
+}
+
+.white-strip {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    background: white;
+    margin: 10px 0;
+    height: 20px;
+    align-items: center;
+}
+
+.cvv {
+    color: black;
+}
+
+.info-text {
+    font-size: 0.8em;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 1em;
+}
+
